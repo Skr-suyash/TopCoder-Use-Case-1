@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+nav {
+    padding: 10px 20px;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    box-shadow: 0 0 8px rgb(155, 142, 142);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 20px;
+}
+
+#read-more {
+    margin-left: auto;
+    color: blue;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#icon {
+    font-size: 1.5em;
+}
+
+#slider {
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+    background-color: rgb(228, 217, 217);
+}
+
+#full-screen {
+    margin: 0 20px 0 auto;
+    background-color: #3EB650;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}

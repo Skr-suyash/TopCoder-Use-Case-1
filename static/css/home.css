@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+}
+
+/*   COVID Alert Section   */
+div.covid-alert {
+  margin: 0 0 4px 0;
+  min-height: 100px;
+  background-color: #ee2222;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+span.warning {
+  font-size: 4em;
+  color: white;
+  padding: 15px;
+}
+
+div.warning-content {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.warning-text {
+  font-size: 1.5em;
+  font-family: "Roboto";
+  font-style: normal;
+  color: white;
+  margin: 15px;
+}
+
+.cross {
+  float: right;
+  color: white;
+  font-size: 4em;
+  padding: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  div.covid-alert {
+    text-align: start;
+  }
+  span.warning,
+  .cross {
+    font-size: 3em;
+  }
+  .warning-text {
+    font-size: 1.2em;
+  }
+}
+
+/*   NAVBAR   */
+
+nav.bg-custom {
+  background-color: #d8da64b7;
+}
+
+.navbar-brand {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat;
+  font-weight: bold;
+  padding: 10px 0 20px 5.5em;
+  background-image: url("/images/hawaii-gov.webp");
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+}
+
+h3.brand-name {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+a.nav-link {
+  text-align: center;
+  margin: 0 2em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
+.nav-icon {
+  color: #63642d;
+  font-size: 2.5em;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+img.logo {
+  margin: 0 15px 0 10px;
+}
+
+.nav-item a:hover {
+  border-bottom: 3px solid green;
+}
+
+.nav-item a.active {
+  border-bottom: 3px solid green;
+}
+
+
+/* COVID Info */
+
+.covid-img {
+  height: 18em;
+  margin-top: 4px;
+  background-image: url('/images/covid.webp');
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.covid-info {
+  text-align: center;
+  background-color: #EFE1E1;
+  padding: 20px;
+  margin-right: 2em;
+  box-shadow: 0 0 3px #ccc;
+}
+
+h3.info-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #4F318E;;
+}
+
+p.info {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .covid-info {
+    margin: 0;
+  }
+}
+
+/* Unemployment Claims Section */
+
+div.claims-section {
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+h2.claims-header {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+  line-height: 1.8em;
+}
+
+div.card-holder {
+  padding: 20px;
+}
+
+div.custom-card {
+  background-color: #F8F8F8;
+  margin: 15px;
+  padding: 28px 10px 10px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px #ccc;
+  -moz-box-shadow: 0 0 2px 2px #ccc;
+  box-shadow: 0 0 2px 2px #ccc;
+  cursor: pointer;
+}
+
+div.custom-card:hover,
+div.custom-card[role="button"]:focus,
+div.custom-card[role="button"]:active {
+  background-color: #0071bc;
+  color: white;
+  box-shadow: 0 0 9px 5px #ccc;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+h4.claim-info {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+p.card-text {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+
+span.arrow {
+  float: right;
+  font-size: 2em;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 2em;
+  min-height: 100px;
+  background-color: whitesmoke;
+}
+
+a.footer-text {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+span.brand-foot {
+  margin-left: 20px;
+}
+
+span.copyright {
+  margin: auto;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: inline-block;
+    text-align: center;
+  }
+  span.copyright {
+    display: block;
+    margin: 20px 0;
+  }
+}

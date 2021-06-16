@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{fname}}</title>
+
+    <link rel="stylesheet" href="/css/pdfViewer.css">
+
+    {{!-- Google Analytics gtag (!! Replace this with your own) --}}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171522558-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-171522558-2');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Very Simple NavBar -->
+    <nav role="navigation">
+        <a href="/" role="link">
+            <img src="/images/hawaii-gov.webp" height="80px" width="80px" alt="logo-hawaii">
+            <h3 class="brand">State of Hawaii</h3>
+        </a>
+        <button id="full-screen">Full Screen</button>
+        {{!-- Read More Button to show info about PDF --}}
+        <a id="read-more" role="link" tabindex="0">Show Info <span id="icon">&#8595;</span></a>
+    </nav>
+
+    <div id="slider">{{info}}</div>
+
+    {{!-- View SDK --}}
+    <div id="adobe-dc-view"></div>
+
+
+    {{!-- JQuery (Load Async.)--}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    {{!-- Send Variables --}}
+    <script>
+        url = '/pdf/' + '{{name}}';
+        fname = '{{fname}}' + '.pdf';
+    </script>
+
+    {{!-- View SDK --}}
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    {{!-- Custom Script --}}
+    <script src="/js/pdfViewerUtil.js"></script>
+    <script src="/js/pdfViewer.js"></script>
+
+</body>
+
+</html>

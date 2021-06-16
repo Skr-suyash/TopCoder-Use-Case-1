@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hawaii</title>
+</head>
+
+<!-- CSS Styling --->
+<style>
+    body {
+        padding: 10px 20px;
+        background-color: #F0F0E1;
+    }
+    h2.header {
+        color: red;
+        font-family: 'Lucida Sans', sans-serif;
+    }
+
+    p.info {
+        font-size: 1.2rem;
+    }
+
+    h2.state-h {
+        margin: 2.5em 0;
+        color: blue;
+    }
+
+
+    table {
+        margin: 0 auto;
+        border: 3px solid rgb(199, 190, 190);
+        font-family: monospace;
+    }
+
+    tr {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    td {
+        padding: 0 20px;
+    }
+
+    a {
+        margin-left: 3em;
+        float: right;
+    }
+
+    a[href] {
+        color: blue;
+    }
+
+    tr:nth-child(even) {
+        background-color: rgb(199, 190, 190);
+    }
+</style>
+
+
+<body>
+    <button onclick="window.history.back()">Back</button>
+
+    <div class="container">
+        <h2 class="header">Hawaii</h2>
+        <p class="info">Find contact information and major state agencies and offices for the government of Hawaii.</p>
+
+        {{!-- Table showing All the Contacts --}}
+        <h2 class="state-h">State Government</h3>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            Official Name:
+                            <a href="https://en.wikipedia.org/wiki/Hawaii">Hawaii</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Governor:
+                            <a href="https://en.wikipedia.org/wiki/David_Ige">David Y. Ige</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Email:
+                            <a href="mailto:info@ehawaii.gov">info@ehawaii.gov</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Contact:
+                            <a href="https://governor.hawaii.gov/contact-us/contact-the-governor/">Contact the
+                                governor</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Main Address:
+                            <a>Executive Chambers <br>
+                                State Capitol <br>
+                                Honolulu, HI, 96813</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            Phone-Number:
+                            <a>808-586-0034
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</body>
+
+</html>
